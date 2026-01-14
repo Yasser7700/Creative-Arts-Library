@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مكتبة الفنون الإبداعية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/wowslider.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">
+          <i class="fa-solid fa-palette"></i>
+          <span>مكتبة الفنون الإبداعية</span>
+        </div>
+        <nav class="primary-nav">
+          <a href="index.html" aria-current="page">الرئيسية</a>
+          <a href="html/listings.html">الأعمال</a>
+          <a href="html/categories.html">حسب الفئة</a>
+          <a href="html/services.html">الخدمات</a>
+          <a href="html/blog.html">المدونة</a>
+          <a href="html/contact.html">اتصل بنا</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn ghost" href="html/login.html">تسجيل الدخول</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- Hero Banner Full Width - WowSlider -->
+      <section class="hero-banner">
+        <div id="wowslider-container1">
+          <div class="ws_images">
+            <ul>
+              <li>
+                <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=1200&q=80" alt="معرض لوحات" title="لوحات ملهمة" id="wows1_0"/>
+                <div class="slide-content">
+                  <h1>لوحات ملهمة</h1>
+                  <p>اكتشف مجموعة واسعة من الأعمال الفنية الرائعة</p>
+                </div>
+              </li>
+              <li>
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" alt="مكتبة" title="مكتبة نابضة" id="wows1_1"/>
+                <div class="slide-content">
+                  <h1>مكتبة نابضة</h1>
+                  <p>مجموعة ضخمة من الكتب والمؤلفات النادرة</p>
+                </div>
+              </li>
+              <li>
+                <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=80" alt="آلة كمان" title="موسيقى وفنون" id="wows1_2"/>
+                <div class="slide-content">
+                  <h1>موسيقى وفنون</h1>
+                  <p>استمع لأجمل المقطوعات الموسيقية الكلاسيكية</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="ws_bullets">
+            <a href="#" title="لوحات ملهمة" class="ws_selbull">1</a>
+            <a href="#" title="مكتبة نابضة">2</a>
+            <a href="#" title="موسيقى وفنون">3</a>
+          </div>
+          <div class="ws_playpause ws_play"></div>
+        </div>
+      </section>
+
+      <!-- Search Section -->
+      <section class="search-section">
+        <div class="container">
+          <h2 class="search-title">ابحث عن عمل فني ملهم</h2>
+          <form id="heroSearchForm" class="search-form-inline">
+            <div class="search-group">
+              <label>
+                <i class="fa-solid fa-palette"></i>
+                نوع العمل
+              </label>
+              <select>
+                <option value="">كل الأنواع</option>
+                <option value="لوحة">لوحة</option>
+                <option value="كتاب">كتاب</option>
+                <option value="تصوير">تصوير</option>
+                <option value="موسيقى">موسيقى</option>
+                <option value="فيلم">فيلم</option>
+              </select>
+            </div>
+            <div class="search-group">
+              <label>
+                <i class="fa-solid fa-user"></i>
+                الفنان/المؤلف
+              </label>
+              <select>
+                <option value="">الكل</option>
+                <option value="فان جوخ">فان جوخ</option>
+                <option value="ليوناردو دا فنشي">ليوناردو دا فنشي</option>
+                <option value="نجيب محفوظ">نجيب محفوظ</option>
+                <option value="إدفارد مونك">إدفارد مونك</option>
+              </select>
+            </div>
+            <div class="search-group search-group-wide">
+              <label>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                العنوان
+              </label>
+              <input id="heroModel" list="modelSuggestions" type="text" placeholder="اكتب عنوان العمل..." />
+              <datalist id="modelSuggestions">
+                <option value="الموناليزا"></option>
+                <option value="لوحة عباد الشمس"></option>
+                <option value="الصرخة"></option>
+                <option value="بين القصرين"></option>
+                <option value="سوناتا ضوء القمر"></option>
+              </datalist>
+            </div>
+            <button type="submit" class="btn primary search-btn">
+              <i class="fa-solid fa-search"></i>
+              البحث
+            </button>
+          </form>
+          <div class="search-suggestions" id="searchSuggestions" aria-live="polite"></div>
+          <div class="search-results" id="searchResults" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- Featured Items - Masonry Style -->
+      <section class="featured-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2>مختاراتنا المميزة</h2>
+              <p>اختيارات فنية من لوحات وكتب وتصوير وموسيقى</p>
+            </div>
+            <a href="html/listings.html" class="btn ghost">
+              عرض المزيد
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </div>
+          <div class="masonry-grid">
+            <article class="featured-card">
+              <div class="card-image">
+                <img src="./images/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" alt="الموناليزا" />
+                <div class="card-badge">الأكثر مبيعاً</div>
+              </div>
+              <div class="card-content">
+                <div class="card-tag">لوحة</div>
+                <h3>الموناليزا</h3>
+                <p class="card-author">ليوناردو دا فنشي - 1503</p>
+                <div class="card-footer">
+                  <span class="card-price">2,000,000 ر.ي</span>
+                  <button class="btn-icon">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="featured-card">
+              <div class="card-image">
+                <img src="./images/دوار الشمس.jpg" alt="لوحة عباد الشمس" />
+              </div>
+              <div class="card-content">
+                <div class="card-tag">لوحة</div>
+                <h3>لوحة عباد الشمس</h3>
+                <p class="card-author">فان جوخ - 1888</p>
+                <div class="card-footer">
+                  <span class="card-price">1,500,000 ر.ي</span>
+                  <button class="btn-icon">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="featured-card">
+              <div class="card-image">
+                <img src="./images/بين_القصرين.jpg" alt="بين القصرين" />
+              </div>
+              <div class="card-content">
+                <div class="card-tag">رواية</div>
+                <h3>بين القصرين</h3>
+                <p class="card-author">نجيب محفوظ - 1956</p>
+                <div class="card-footer">
+                  <span class="card-price">50 ر.ي</span>
+                  <button class="btn-icon">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories & Services Combined -->
+      <section class="categories-services">
+        <div class="container">
+          <div class="tabs-container">
+            <div class="tabs-header">
+              <button class="tab-btn active" data-tab="categories">
+                <i class="fa-solid fa-layer-group"></i>
+                فئات الفنون
+              </button>
+              <button class="tab-btn" data-tab="services">
+                <i class="fa-solid fa-handshake"></i>
+                خدماتنا
+              </button>
+            </div>
+            <div class="tabs-content">
+              <div class="tab-panel active" id="categories">
+                <div class="category-cards">
+                  <div class="category-card">
+                    <div class="category-icon">
+                      <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3>لوحات</h3>
+                    <p>لوحات زيتية ومائية وحديثة</p>
+                    <span class="category-count">2,500+</span>
+                  </div>
+                  <div class="category-card">
+                    <div class="category-icon">
+                      <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>كتب</h3>
+                    <p>روايات، شعر، نقد أدبي ومعرفة</p>
+                    <span class="category-count">5,200+</span>
+                  </div>
+                  <div class="category-card">
+                    <div class="category-icon">
+                      <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <h3>تصوير</h3>
+                    <p>التقاط لحظات فنية من زوايا مبتكرة</p>
+                    <span class="category-count">1,800+</span>
+                  </div>
+                  <div class="category-card">
+                    <div class="category-icon">
+                      <i class="fa-solid fa-music"></i>
+                    </div>
+                    <h3>موسيقى</h3>
+                    <p>مقطوعات كلاسيكية ومعاصرة تلهمك</p>
+                    <span class="category-count">3,100+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-panel" id="services">
+                <div class="service-cards">
+                  <div class="service-card">
+                    <div class="service-icon">
+                      <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+                    <h3>إعارة وقراءة</h3>
+                    <p>إعارة رقمية وورقية لمختلف الأعمال</p>
+                  </div>
+                  <div class="service-card">
+                    <div class="service-icon">
+                      <i class="fa-solid fa-chalkboard"></i>
+                    </div>
+                    <h3>ورش ودورات</h3>
+                    <p>ورش عمل فنية وتعليمية لجميع الأعمار</p>
+                  </div>
+                  <div class="service-card">
+                    <div class="service-icon">
+                      <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+                    <h3>أرشفة رقمية</h3>
+                    <p>حفظ رقمي للأعمال النادرة والقديمة</p>
+                  </div>
+                  <div class="service-card">
+                    <div class="service-icon">
+                      <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <h3>اشتراكات وبطاقات</h3>
+                    <p>بطاقات عضوية ومزايا للمشتركين</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-section">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <div class="stat-content">
+                <h3>12,000+</h3>
+                <p>عمل فني متاح</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="stat-content">
+                <h3>98%</h3>
+                <p>رضا المشتركين</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="fa-solid fa-calendar-check"></i>
+              </div>
+              <div class="stat-content">
+                <h3>120+</h3>
+                <p>فعاليات سنوية</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="fa-solid fa-building"></i>
+              </div>
+              <div class="stat-content">
+                <h3>15</h3>
+                <p>فروع ومراكز</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section class="blog-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2>أحدث المقالات</h2>
+              <p>فنون، أدب، تصوير وموسيقى</p>
+            </div>
+            <a href="html/blog.html" class="btn ghost">
+              جميع المقالات
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </div>
+          <div class="blog-cards">
+            <article class="blog-card">
+              <div class="blog-image">
+                <img src="./images/photo-1541961017774-22349e4a1262.jpg" alt="مقال" />
+              </div>
+              <div class="blog-content">
+                <span class="blog-date">
+                  <i class="fa-solid fa-calendar"></i>
+                  15 يناير 2026
+                </span>
+                <h3>كيف تبدأ بفهم المدارس الفنية؟</h3>
+                <p>انطباعية، تكعيبية، تعبيرية: الدليل المختصر لفهم المدارس الفنية المختلفة.</p>
+                <a href="html/blog.html" class="blog-link">
+                  اقرأ المزيد
+                  <i class="fa-solid fa-arrow-left"></i>
+                </a>
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-image">
+                <img src="./images/قائمة قراءة لعشاق الأدب العربي.jpg" alt="مقال" />
+              </div>
+              <div class="blog-content">
+                <span class="blog-date">
+                  <i class="fa-solid fa-calendar"></i>
+                  10 يناير 2026
+                </span>
+                <h3>قائمة قراءة لعشاق الأدب العربي</h3>
+                <p>من نجيب محفوظ إلى الطيب صالح: دليل شامل لأفضل الروايات العربية.</p>
+                <a href="html/blog.html" class="blog-link">
+                  اقرأ المزيد
+                  <i class="fa-solid fa-arrow-left"></i>
+                </a>
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-image">
+                <img src="./images/أساسيات التصوير للمبتدئين.jpg" alt="مقال" />
+              </div>
+              <div class="blog-content">
+                <span class="blog-date">
+                  <i class="fa-solid fa-calendar"></i>
+                  5 يناير 2026
+                </span>
+                <h3>أساسيات التصوير للمبتدئين</h3>
+                <p>الضوء، التكوين، والعدسات المناسبة لأول كاميرا - دليل شامل للمبتدئين.</p>
+                <a href="html/blog.html" class="blog-link">
+                  اقرأ المزيد
+                  <i class="fa-solid fa-arrow-left"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2>جاهز للإلهام؟</h2>
+            <p>انضم إلى مكتبة الفنون الإبداعية واستكشف آلاف الأعمال الفنية المميزة</p>
+            <a href="html/register.html" class="btn primary large">
+              <i class="fa-solid fa-user-plus"></i>
+              ابدأ الآن
+            </a>
+          </div>
+        </div>
+      </section>
+   </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>مكتبة الفنون الإبداعية</h3>
+        <p>إلهام ومعرفة ومجتمع من المبدعين والقراء.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="html/listings.html">الأعمال</a>
+        <a href="html/blog.html">المدونة</a>
+        <a href="html/contact.html">التواصل</a>
+      </div>
+      <p class="disclaimer">© جميع الحقوق محفوظة 2026</p>
+    </footer>
+
+    <script src="js/wowslider.js"></script>
+    <script src="js/main.js" defer></script>
+    <script>
+      function wowslider_init() {
+        if (typeof wowslider !== 'undefined') {
+          wowslider.init('wowslider-container1');
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', wowslider_init);
+      } else {
+        wowslider_init();
+      }
+    </script>
+  </body>
+</html>

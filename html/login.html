@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسجيل الدخول - مكتبة الفنون الإبداعية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">
+          <i class="fa-solid fa-palette"></i>
+          <span>مكتبة الفنون الإبداعية</span>
+        </div>
+        <nav class="primary-nav">
+          <a href="../index.html">الرئيسية</a>
+          <a href="listings.html">الأعمال</a>
+          <a href="categories.html">حسب الفئة</a>
+          <a href="services.html">الخدمات</a>
+          <a href="blog.html">المدونة</a>
+          <a href="contact.html">اتصل بنا</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn ghost" href="login.html" aria-current="page">تسجيل الدخول</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="auth">
+          <section class="auth-hero">
+            <h2>مرحباً بعودتك</h2>
+            <p>سجّل دخولك للوصول إلى مكتبتك، متابعة المفضلة، وتلقي التوصيات المخصصة.</p>
+            <ul class="auth-highlights">
+              <li><i class="fa-solid fa-shield-halved"></i> حماية وخصوصية متقدمة</li>
+              <li><i class="fa-solid fa-bell"></i> تنبيهات فورية للإصدارات الجديدة</li>
+              <li><i class="fa-solid fa-headset"></i> دعم فني على مدار الساعة</li>
+            </ul>
+          </section>
+          <section class="auth-card">
+            <header>
+              <h1>تسجيل الدخول</h1>
+              <p class="muted">أدخل بريدك الإلكتروني وكلمة المرور للمتابعة</p>
+            </header>
+            <form id="loginForm" novalidate class="single">
+              <label>
+                البريد الإلكتروني
+                <input type="email" name="email" required />
+              </label>
+              <label>
+                كلمة المرور
+                <input type="password" name="password" required minlength="6" />
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="remember" />
+                <span>تذكرني</span>
+              </label>
+              <button type="submit" class="btn primary">تسجيل الدخول</button>
+              <p class="form-feedback" aria-live="polite"></p>
+            </form>
+            <p class="auth-switch">لا تملك حساباً؟ <a href="register.html">أنشئ حساباً الآن</a></p>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>
+          <h3>مكتبة الفنون الإبداعية</h3>
+          <p>إلهام ومعرفة ومجتمع من المبدعين والقراء.</p>
+        </div>
+        <div class="footer-links">
+          <a href="../index.html">الرئيسية</a>
+          <a href="listings.html">الأعمال</a>
+          <a href="blog.html">المدونة</a>
+          <a href="contact.html">التواصل</a>
+        </div>
+      </div>
+      <p class="disclaimer">© جميع الحقوق محفوظة 2026</p>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+  </body>
+</html>

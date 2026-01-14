@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تفاصيل العمل - مكتبة الفنون الإبداعية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">
+          <i class="fa-solid fa-palette"></i>
+          <span>مكتبة الفنون الإبداعية</span>
+        </div>
+        <nav class="primary-nav">
+          <a href="../index.html">الرئيسية</a>
+          <a href="listings.html">الأعمال</a>
+          <a href="categories.html">حسب الفئة</a>
+          <a href="services.html">الخدمات</a>
+          <a href="blog.html">المدونة</a>
+          <a href="contact.html">اتصل بنا</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn ghost" href="login.html">تسجيل الدخول</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="breadcrumb">
+          <p>الرئيسية &gt; لوحات &gt; فان جوخ &gt; عباد الشمس</p>
+        </section>
+      <section class="details-gallery">
+        <div class="gallery-main">
+          <img
+            src="../images/دوار الشمس.jpg"
+            alt="لوحة عباد الشمس"
+            id="currentGalleryImage"
+          />
+        </div>
+        <div class="gallery-controls">
+          <button class="btn ghost" id="prevThumbnail">السابق</button>
+          <button class="btn ghost" id="nextThumbnail">التالي</button>
+          <button class="btn primary" id="toggle360">عرض 360°</button>
+        </div>
+        <div class="gallery-360" id="gallery360Message">
+          <p>انقر على "عرض 360°" لجولة تفاعلية حول العمل الفني.</p>
+        </div>
+        <div class="thumbnail-grid">
+          <img
+            src="../images/دوار الشمس.jpg"
+            alt="التفاصيل"
+            data-index="0"
+            class="active"
+          />
+          <img
+            src="../images/عباد الشمس1.jpg"
+            alt="تفاصيل القماش"
+            data-index="1"
+          />
+          <img
+            src="../images/عباد الشمس2.jpg"
+            alt="ضربات الفرشاة"
+            data-index="2"
+          />
+          <img
+            src="../images/عباد الشمس3.jpg"
+            alt="توقيع الفنان"
+            data-index="3"
+          />
+        </div>
+        <div class="spec-table">
+          <h3>بيانات العمل</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>البند</th>
+                <th>الوصف</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>الفنان</td>
+                <td>فنسنت فان جوخ</td>
+              </tr>
+              <tr>
+                <td>الخامة</td>
+                <td>زيت على قماش</td>
+              </tr>
+              <tr>
+                <td>السنة</td>
+                <td>1888</td>
+              </tr>
+              <tr>
+                <td>الأبعاد</td>
+                <td>92 × 73 سم</td>
+              </tr>
+              <tr>
+                <td>المدرسة</td>
+                <td>انطباعية</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="details-info">
+        <div>
+          <h1>لوحة عباد الشمس</h1>
+          <p class="price">1,500,000 ر.ي</p>
+          <p class="muted">الفنان: فان جوخ | السنة: 1888 | التصنيف: انطباعية</p>
+        </div>
+        <div class="details-meta">
+          <div>
+            <span>الفترة</span>
+            <strong>القرن 19</strong>
+          </div>
+          <div>
+            <span>الخامة</span>
+            <strong>زيت على قماش</strong>
+          </div>
+          <div>
+            <span>الأبعاد</span>
+            <strong>92 × 73 سم</strong>
+          </div>
+          <div>
+            <span>الحالة</span>
+            <strong>ممتازة</strong>
+          </div>
+        </div>
+        <div class="details-actions">
+          <button class="btn primary">احجز معاينة</button>
+          <button class="btn ghost">اطلب استعارة/شراء</button>
+          <button class="btn ghost">أضف للمفضلة</button>
+        </div>
+      </section>
+
+      <section class="specifications">
+        <header>
+          <h2>معلومات العمل</h2>
+          <p>تفاصيل عامة تهم المقتنين والباحثين.</p>
+        </header>
+        <div class="spec-grid">
+          <article>
+            <h3>المدرسة الفنية</h3>
+            <p>انطباعية</p>
+          </article>
+          <article>
+            <h3>الموضوع</h3>
+            <p>طبيعة صامتة (زهور عباد الشمس)</p>
+          </article>
+          <article>
+            <h3>السلسلة</h3>
+            <p>جزء من سلسلة لوحات عباد الشمس</p>
+          </article>
+          <article>
+            <h3>التوقيع</h3>
+            <p>موقّعة أسفل اليمين</p>
+          </article>
+          <article>
+            <h3>الإطار</h3>
+            <p>إطار خشبي كلاسيكي (اختياري)</p>
+          </article>
+          <article>
+            <h3>الشهادة</h3>
+            <p>شهادة توثيق من دار العرض</p>
+          </article>
+          <article>
+            <h3>الحفظ</h3>
+            <p>حفظ في بيئة متحكم بها (رطوبة/حرارة)</p>
+          </article>
+          <article>
+            <h3>العرض</h3>
+            <p>معروضة ضمن معرض خاص للفنان</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="history">
+        <header>
+          <h2>التاريخ والسياق</h2>
+        </header>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> أنجزت في آرل، فرنسا عام 1888.</li>
+          <li><i class="fa-solid fa-check"></i> ضمن أبرز أعمال فان جوخ في فترة آرل.</li>
+          <li><i class="fa-solid fa-check"></i> موثّقة في فهارس الفنان المعتمدة.</li>
+          <li><i class="fa-solid fa-check"></i> مقتناة من قبل جهة واحدة سابقاً.</li>
+        </ul>
+      </section>
+
+      <section class="seller">
+        <article>
+          <div class="avatar">
+            <img src="../images/عباد الشمس3.jpg" alt="البائع" />
+          </div>
+          <div>
+            <h3>مكتبة الفنون الإبداعية</h3>
+            <p>تقييم: ⭐⭐⭐⭐☆ (4.9)</p>
+            <p>منذ 2016 في خدمة الفن والثقافة، ومعارض مستمرة.</p>
+            <p><i class="fa-solid fa-phone"></i> 9200 12345</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="finance">
+        <header>
+          <h2>طلب شراء/استعارة</h2>
+        </header>
+        <form class="finance-form">
+          <label>
+            قيمة الشراء
+            <input type="number" placeholder="1,500,000" />
+          </label>
+          <label>
+            مدة الاشتراك (شهور)
+            <input type="number" placeholder="6" />
+          </label>
+          <label>
+            رسوم الخدمة
+            <input type="number" placeholder="2.5" step="0.1" />
+          </label>
+          <button class="btn primary" type="button">إرسال الطلب</button>
+        </form>
+      </section>
+
+      <section class="map-section">
+        <iframe
+          title="موقع المكتبة"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61563.33450643329!2d44.2304219515467!3d15.338073787037837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603db74d0230405%3A0x68c4f0de71e3be12!2z2KzYp9mF2LnYqSDYtdmG2LnYp9ihINin2YTYrNiv2YrYr9ip!5e0!3m2!1sar!2s!4v1768246203054!5m2!1sar!2s"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section class="similar-cars">
+        <header>
+          <h2>أعمال مشابهة</h2>
+          <p>خيارات أخرى ضمن نفس التصنيف الفني.</p>
+        </header>
+        <div class="card-grid">
+          <article>
+            <h3>الموناليزا</h3>
+            <p>ليوناردو دا فنشي، لوحة عصر النهضة</p>
+            <p class="price">2,000,000 ر.ي</p>
+            <button class="btn ghost">مقارنة</button>
+            <a class="btn primary" href="details.html">العرض الكامل</a>
+          </article>
+          <article>
+            <h3>بين القصرين</h3>
+            <p>نجيب محفوظ، رواية عربية</p>
+            <p class="price">50 ر.ي</p>
+            <button class="btn ghost">مقارنة</button>
+            <a class="btn primary" href="details.html">العرض الكامل</a>
+          </article>
+          <article>
+            <h3>الصرخة</h3>
+            <p>إدفارد مونك، لوحة تعبيرية</p>
+            <p class="price">1,200,000 ر.ي</p>
+            <button class="btn ghost">مقارنة</button>
+            <a class="btn primary" href="details.html">العرض الكامل</a>
+          </article>
+        </div>
+      </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>
+          <h3>مكتبة الفنون الإبداعية</h3>
+          <p>إلهام ومعرفة ومجتمع من المبدعين والقراء.</p>
+        </div>
+        <div class="footer-links">
+          <a href="../index.html">الرئيسية</a>
+          <a href="listings.html">الأعمال</a>
+          <a href="blog.html">المدونة</a>
+          <a href="contact.html">التواصل</a>
+        </div>
+      </div>
+      <p class="disclaimer">© جميع الحقوق محفوظة 2026</p>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+  </body>
+</html>

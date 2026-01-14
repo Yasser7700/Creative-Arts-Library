@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اتصل بنا - مكتبة الفنون الإبداعية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">
+          <i class="fa-solid fa-palette"></i>
+          <span>مكتبة الفنون الإبداعية</span>
+        </div>
+        <nav class="primary-nav">
+          <a href="../index.html">الرئيسية</a>
+          <a href="listings.html">الأعمال</a>
+          <a href="categories.html">حسب الفئة</a>
+          <a href="services.html">الخدمات</a>
+          <a href="blog.html">المدونة</a>
+          <a href="contact.html" aria-current="page">اتصل بنا</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn ghost" href="login.html">تسجيل الدخول</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="contact">
+          <section class="contact-info">
+            <h2>نحن هنا للمساعدة</h2>
+            <p>فريق الدعم متاح 24/7 للرد على استفساراتك والتنسيق حول المعاينات والاستعارة/الشراء.</p>
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> اليمن ، صنعاء ، شارع الدائري</li>
+              <li><i class="fa-solid fa-phone"></i> +967 712 633 106 </li>
+              <li><i class="fa-solid fa-envelope"></i> info@gmim.com</li>
+              <li><i class="fa-solid fa-clock"></i> ساعات العمل: 8ص - 10م</li>
+            </ul>
+            <div class="socials">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </section>
+          <section class="contact-form">
+            <h2>أرسل لنا رسالة</h2>
+            <form id="contactForm" novalidate>
+              <label>
+                الاسم الكامل
+                <input type="text" name="name" required minlength="3" />
+              </label>
+              <label>
+                البريد الإلكتروني
+                <input type="email" name="email" required />
+              </label>
+              <label>
+                رقم الهاتف
+                <input type="tel" name="phone" pattern="[+]?([0-9٠-٩][\s-]?){8,12}" inputmode="numeric" required />
+              </label>
+              <label>
+                موضوع الرسالة
+                <select name="subject" required>
+                  <option value="">اختر موضوعاً</option>
+                  <option value="art-inquiry">استفسار عن عمل فني</option>
+                  <option value="borrow-buy">استعارة/شراء</option>
+                  <option value="support">دعم فني</option>
+                </select>
+              </label>
+              <label>
+                الرسالة
+                <textarea name="message" rows="4" required></textarea>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="robot" required />
+                <span>أنا لست روبوتاً</span>
+              </label>
+              <button type="submit" class="btn primary">إرسال الرسالة</button>
+              <p class="form-feedback" aria-live="polite"></p>
+            </form>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>
+          <h3>مكتبة الفنون الإبداعية</h3>
+          <p>إلهام ومعرفة ومجتمع من المبدعين والقراء.</p>
+        </div>
+        <div class="footer-links">
+          <a href="../index.html">الرئيسية</a>
+          <a href="listings.html">الأعمال</a>
+          <a href="blog.html">المدونة</a>
+          <a href="contact.html">التواصل</a>
+        </div>
+      </div>
+      <p class="disclaimer">© جميع الحقوق محفوظة 2026</p>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+  </body>
+</html>

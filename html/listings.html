@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>قائمة الأعمال - مكتبة الفنون الإبداعية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">
+          <i class="fa-solid fa-palette"></i>
+          <span>مكتبة الفنون الإبداعية</span>
+        </div>
+        <nav class="primary-nav">
+          <a href="../index.html">الرئيسية</a>
+          <a href="listings.html" aria-current="page">الأعمال</a>
+          <a href="categories.html">حسب الفئة</a>
+          <a href="services.html">الخدمات</a>
+          <a href="blog.html">المدونة</a>
+          <a href="contact.html">اتصل بنا</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn ghost" href="login.html">تسجيل الدخول</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="listing-grid">
+          <aside class="filters">
+            <h3>فلترة ذكية</h3>
+            <form id="filterForm">
+              <label>
+                الفئة
+                <select>
+                  <option>لوحات</option>
+                  <option>كتب</option>
+                  <option>تصوير</option>
+                  <option>موسيقى</option>
+                  <option>أفلام</option>
+                </select>
+              </label>
+              <label>
+                المدرسة/التصنيف
+                <select>
+                  <option>انطباعية</option>
+                  <option>عصر النهضة</option>
+                  <option>تعبيرية</option>
+                  <option>كلاسيكي</option>
+                </select>
+              </label>
+              <label>
+                السعر من
+                <input type="number" placeholder="50" />
+              </label>
+              <label>
+                السعر إلى
+                <input type="number" placeholder="2,000,000" />
+              </label>
+              <label>
+                السنة
+                <input type="number" placeholder="1900" />
+              </label>
+              <label>
+                اللون الغالب
+                <input type="color" value="#1a365d" />
+              </label>
+              <label>
+                ترتيب النتائج
+                <select>
+                  <option>الأحدث</option>
+                  <option>الأقل سعراً</option>
+                  <option>الأعلى سعراً</option>
+                  <option>الأقدم</option>
+                </select>
+              </label>
+              <div class="filter-actions">
+                <button type="reset" class="btn ghost">إعادة التعيين</button>
+                <button type="button" class="btn primary">عرض النتائج</button>
+              </div>
+            </form>
+          </aside>
+          <section class="detailed-list">
+            <div class="results-header">
+              <p>١٢٤ نتائج</p>
+              <div class="sort-options">
+                <span>الترتيب:</span>
+                <button class="pill active">الأحدث</button>
+                <button class="pill">الأقل سعراً</button>
+                <button class="pill">الأعلى سعراً</button>
+              </div>
+            </div>
+            <div class="cards-only">
+              <div class="car-card">
+                <img src="../images/دوار الشمس.jpg" alt="لوحة عباد الشمس" />
+                <div class="card-body">
+                  <h3>لوحة عباد الشمس</h3>
+                  <p class="muted">فان جوخ • لوحة زيتية • انطباعية</p>
+                  <div class="card-meta">
+                    <span><i class="fa-solid fa-calendar-days"></i> 1888</span>
+                    <span><i class="fa-solid fa-user"></i> فان جوخ</span>
+                  </div>
+                  <div class="card-price">
+                    <span class="price">1,500,000 ر.ي</span>
+                    <a class="btn ghost" href="details.html">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="car-card">
+                <img src="../images/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" alt="الموناليزا" />
+                <div class="card-body">
+                  <h3>الموناليزا</h3>
+                  <p class="muted">دا فنشي • لوحة • عصر النهضة</p>
+                  <div class="card-meta">
+                    <span><i class="fa-solid fa-calendar-days"></i> 1503</span>
+                    <span><i class="fa-solid fa-user"></i> دا فنشي</span>
+                  </div>
+                  <div class="card-price">
+                    <span class="price">2,000,000 ر.ي</span>
+                    <a class="btn ghost" href="details.html">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="car-card">
+                <img src="../images/بين_القصرين.jpg" alt="بين القصرين" />
+                <div class="card-body">
+                  <h3>بين القصرين</h3>
+                  <p class="muted">نجيب محفوظ • رواية • أدب عربي</p>
+                  <div class="card-meta">
+                    <span><i class="fa-solid fa-calendar-days"></i> 1956</span>
+                    <span><i class="fa-solid fa-user"></i> نجيب محفوظ</span>
+                  </div>
+                  <div class="card-price">
+                    <span class="price">50 ر.ي</span>
+                    <a class="btn ghost" href="details.html">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination">
+              <button class="btn ghost">&lsaquo; السابق</button>
+              <span>1 / 5</span>
+              <button class="btn primary">التالي &rsaquo;</button>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>
+          <h3>مكتبة الفنون الإبداعية</h3>
+          <p>إلهام ومعرفة ومجتمع من المبدعين والقراء.</p>
+        </div>
+        <div class="footer-links">
+          <a href="../index.html">الرئيسية</a>
+          <a href="listings.html">الأعمال</a>
+          <a href="blog.html">المدونة</a>
+          <a href="contact.html">التواصل</a>
+        </div>
+      </div>
+      <p class="disclaimer">© جميع الحقوق محفوظة 2026</p>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+  </body>
+</html>
